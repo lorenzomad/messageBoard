@@ -1,0 +1,13 @@
+extends layout 
+
+block content 
+    form(action="/new", method="post") 
+        label(for="author") Author:
+        br
+        input(type="text", name="author")
+        br
+        label(for="text") Message:
+        br
+        input(type="text", name="text", style ={width:"500px", height:"200px"}) 
+        br
+        input(type="submit", value="Send message")
